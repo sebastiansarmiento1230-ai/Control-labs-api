@@ -19,5 +19,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastiansarmiento1230-ai/Control-labs-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastiansarmiento1230-ai/Control-labs-api/issues"
+  },
+  "homepage": "https://github.com/sebastiansarmiento1230-ai/Control-labs-api#readme"
 }
