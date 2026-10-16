@@ -1,18 +1,13 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import cors from 'cors';
+import healthRoutes from './routes/health.routes';
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-// Health Check Endpoint
-app.get('/api/v1/health', (req: Request, res: Response) => {
-  res.status(200).json({
-    status: 'success',
-    message: 'ControlLabs API operando correctamente',
-    timestamp: new Date().toISOString()
-  });
-});
+// Rutas base
+app.use('/api/v1', healthRoutes);
 
 export default app;
